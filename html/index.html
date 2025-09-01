@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>School Login</title>
+</head>
+
+<body>
+    <!-- Header -->
+
+    <header>
+        <div class="school-logo">
+            <h1>🏫 E-learning</h1>
+        </div>
+        <aside class="prof">
+            <ul>
+                <li><a class="active" href="#">
+                    <i class="fas fa-home"></i>
+                    <p>Home</p>
+                </a>
+            </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa fa-ban" aria-hidden="true"></i>
+                        <p>about</p>
+
+                    </a></li>
+                <li><a href="#">
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                    <p>school</p>
+
+                </a></li>
+                <li><a href="#">
+                    <i class="fa fa-indent" aria-hidden="true"></i>
+                    <p>indent</p>
+
+                </a></li> 
+                <li>
+                    <i class="fa fa-phone" aria-hidden="true" >
+
+                    </i>
+                    <p> 778532787</p>
+                </li>             
+                      
+
+                <li class="log-out">
+                    <i class="fas fa-sign-out"></i>
+                    <p>Log Out</p>
+                </a>
+
+            </li>
+            </ul>
+        </aside>
+
+        <!-- Navigation -->
+        <nav>
+            <div class="language-switch">
+                <button onclick="setLanguage('en')" title="Translate to English">English</button>
+                <button onclick="setLanguage('ar')" title="ترجمة إلى العربية">العربية</button>
+            </div>
+        </nav>
+
+    </header>
+        <!-- Sidebar -->
+
+
+        <!-- Main Content -->
+        <main>
+
+
+
+            <section class="login-container">
+                <h2 id="form-title">Manager Login</h2>
+
+                <!-- Role Selection -->
+                <div class="role-selection">
+                    <button class="role-btn active" data-role="Manager" data-color="#1e3c72"
+                        data-hover="#2a5298">Manager</button>
+                    <button class="role-btn" data-role="Teacher" data-color="#8E44AD"
+                        data-hover="#9B59B6">Teacher</button>
+                    <button class="role-btn" data-role="Student" data-color="#27AE60"
+                        data-hover="#2ECC71">Student</button>
+                </div>
+
+                <!-- Login Form -->
+                <form id="loginForm">
+                    <div class="form-group">
+                        <input type="text" id="username" name="username" placeholder=" " required />
+                        <label for="username">Username / Email</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" id="password" name="password" placeholder=" " required />
+                        <label for="password">Password</label>
+                        <span class="toggle-password" onclick="togglePassword()">👁</span>
+                    </div>
+
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                    <button type="submit" class="login-btn">Log In</button>
+                </form>
+
+            </section>
+
+        </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 MySchool | All Rights Reserved</p>
+    </footer>
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
