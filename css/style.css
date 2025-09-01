@@ -10,8 +10,8 @@
 body {
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
-    /* حتى الهيدر والفوتر يظلوا فوق وتحت */
+    flex-direction: column;/* حتى الهيدر والفوتر يظلوا فوق وتحت */
+    
     background-image: url("../images/backgrond.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -66,7 +66,6 @@ header {
     transition-delay: 0.5s;
 }
 
-/* تظهر عند hover على اللوجو */
 .school-logo:hover+.prof,
 .prof:hover {
     transform: translateX(0);
@@ -74,7 +73,7 @@ header {
 }
 
 
-/* ستايل الروابط */
+
 .prof ul {
     list-style: none;
     padding: 0;
@@ -297,9 +296,3 @@ footer {
     }
 }
 
-.loginForm {
-    justify-content: space-between;
-    display: inline-block;
-
-
-}
